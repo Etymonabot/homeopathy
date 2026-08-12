@@ -1,0 +1,38 @@
+const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+  if (entry.isIntersecting) {
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  }
+}), { threshold: .12 });
+
+document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+
+const dilution = document.querySelector('[data-dilution]');
+const potency = document.querySelector('[data-potency]');
+const ratio = document.querySelector('[data-ratio]');
+const title = document.querySelector('[data-title]');
+const description = document.querySelector('[data-description]');
+const drop = document.querySelector('.drop');
+const states = [
+  ['1C', '1 : 100', 'Одна часть вещества', 'На каждом шаге берут одну часть раствора и добавляют 99 частей воды. Затем повторяют снова.'],
+  ['12C', '1 : 10²⁴', 'Предел молекул', 'Уже здесь шанс встретить молекулу исходного вещества становится крайне малым.'],
+  ['24C', '1 : 10⁴⁸', 'Почти только растворитель', 'Степень разведения превосходит привычные физические масштабы — но эти средства продолжают продавать как лечебные.'],
+  ['30C', '1 : 10⁶⁰', 'Ноль ожидаемых молекул', 'Популярное разведение: единица с шестьюдесятью нулями. На этикетке есть название вещества, в грануле его, вероятнее всего, нет.']
+];
+
+dilution.addEventListener('input', () => {
+  const [level, value, heading, copy] = states[Number(dilution.value)];
+  potency.textContent = level;
+  ratio.textContent = value;
+  title.textContent = heading;
+  description.textContent = copy;
+  drop.style.transform = `rotate(45deg) scale(${1 - Number(dilution.value) * .22})`;
+  drop.style.opacity = String(1 - Number(dilution.value) * .28);
+});
+
+const checks = [...document.querySelectorAll('.checklist input')];
+const result = document.querySelector('[data-check-result]');
+checks.forEach(check => check.addEventListener('change', () => {
+  const count = checks.filter(item => item.checked).length;
+  result.textContent = count === 4 ? 'Отлично: теперь обсудите ответы с врачом, которому доверяете.' : `Проверено: ${count} из 4. Не покупайте обещание — проверяйте доказательства.`;
+}));
