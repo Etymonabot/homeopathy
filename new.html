@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Понятный разбор гомеопатии: почему сверхразведения не лечат, что показывают исследования и как не потерять время.">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>Гомеопатия не работает — разбор без магии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Unbounded:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/new.css">
+  <script src="js/new.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span data-progress></span></div>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="header">
+    <a class="brand" href="#top"><span class="brand__dot"></span>не магия</a>
+    <nav aria-label="Навигация"><a href="#how">Как это работает</a><a href="#evidence">Факты</a><a href="#risk">Риски</a></nav>
+    <a class="header__cta" href="#check">Проверить средство <svg class="arrow-icon" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3h8v8M11 3 3 11"/></svg></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__copy reveal">
+        <p class="kicker">Почему гомеопатия не работает</p>
+        <h1>Ноль<br>вещества.<br><em>Ноль лечения.</em></h1>
+        <p class="lead">Этот сайт — о том, почему гомеопатия не работает и как отличить доказанное лечение от пустых обещаний. Чтобы не тратить деньги, не терять время и не рисковать здоровьем.</p>
+        <a class="button" href="#how">Разобраться за 3 минуты <span>↓</span></a>
+      </div>
+      <div class="hero__scene reveal" aria-label="Анимация падающих белых сахарных гранул">
+        <div class="granule-field" aria-hidden="true">
+          <span class="grain grain--1"></span><span class="grain grain--2"></span><span class="grain grain--3"></span>
+          <span class="grain grain--4"></span><span class="grain grain--5"></span><span class="grain grain--6"></span>
+          <span class="grain grain--7"></span><span class="grain grain--8"></span><span class="grain grain--9"></span>
+        </div>
+        <div class="granule-ground" aria-hidden="true"></div>
+        <div class="scene-note"><b>Сахарные шарики</b><span>внутри — только память воды о прошлом</span></div>
+      </div>
+      <div class="scroll-note">листайте, чтобы отделить<br>факты от обещаний</div>
+    </section>
+
+    <section class="ticker" aria-label="Главная мысль"><div><span>ПОХОЖЕЕ НЕ ЛЕЧИТ ПОДОБНОЕ <i>✦</i> ВОДА НЕ ПОМНИТ <i>✦</i> ДОКАЗАТЕЛЬСТВА ВАЖНЕЕ ОБЕЩАНИЙ <i>✦</i></span><span aria-hidden="true">ПОХОЖЕЕ НЕ ЛЕЧИТ ПОДОБНОЕ <i>✦</i> ВОДА НЕ ПОМНИТ <i>✦</i> ДОКАЗАТЕЛЬСТВА ВАЖНЕЕ ОБЕЩАНИЙ <i>✦</i></span></div></section>
+
+    <section class="section dilution" id="how">
+      <div class="section-head reveal"><p class="num">01 / КАК ЭТО УСТРОЕНО</p><h2>Чем сильнее разводят,<br><span>тем «сильнее» средство</span></h2></div>
+      <div class="mechanism-intro reveal">
+        <p class="counterpoint">Не опечатка <span>→</span> это один из принципов гомеопатии</p>
+        <div class="mechanism-copy">
+          <p>Сначала выбирают исходное вещество — то, которое, по принципу «подобное лечат подобным», должно соответствовать симптомам. Например, берут лук (<i>Allium cepa</i>): он вызывает слезотечение, насморк и раздражение слизистых — похожие симптомы гомеопаты пытаются «лечить» препаратом из лука.</p>
+          <p>Затем из исходного вещества готовят раствор. Его <b>многократно разводят и встряхивают после каждого разведения</b>.</p>
+          <p>Это называют <b>потенцированием</b>: в гомеопатии считается, что с каждым таким шагом действие средства не ослабевает, а усиливается — хотя самого исходного вещества становится всё меньше.</p>
+          <p class="numbers-lead"><b>А теперь посмотрим, что это значит в цифрах.</b></p>
+          <p class="potency-chain">1C → 2C → 3C → … → 12C → … → 30C</p>
+          <p class="carrier-note">Сахарная гранула — лишь носитель: на неё наносят уже приготовленное гомеопатическое разведение.</p>
+        </div>
+      </div>
+      <div class="dilution-grid">
+        <div class="dilution-visual reveal">
+          <div class="drop-stage" data-stage><div class="drop"></div><div class="rings"></div><strong data-potency>1C</strong><div class="molecule-meter"><span>ожидаемое вещество</span><i data-meter></i></div></div>
+          <label class="range-prompt" for="dilution-range"><span>←</span> Перетащите ползунок и увеличьте разведение <span>→</span></label>
+          <input class="range" id="dilution-range" type="range" min="0" max="3" value="0" aria-label="Степень разведения" data-dilution>
+          <div class="range-labels"><span>настойка</span><span>12C</span><span>24C</span><span>30C</span></div><p class="range-status" aria-live="polite" data-range-status>Шаг 1 из 4 · исходное разведение</p>
+        </div>
+        <div class="dilution-copy reveal">
+          <p class="big-stat" data-ratio>1 : 100</p>
+          <h3 data-title>Одна часть вещества</h3>
+          <p data-description>На каждом шаге берут одну часть раствора и добавляют 99 частей воды. Затем повторяют снова.</p>
+          <div class="fact"><span>!</span><p>После примерно <b>12C</b> вероятность найти хотя бы одну молекулу исходного вещества становится крайне малой. Это следует из числа Авогадро, а не из мнения.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evidence" id="evidence">
+      <div class="section-head section-head--light reveal"><p class="num">02 / ДОКАЗАТЕЛЬСТВА</p><h2>Обещаний много.<br><span>Убедительных доказательств — нет.</span></h2></div>
+      <p class="evidence-intro reveal"><b>Если средство работает, его эффект должен отличаться от плацебо в контролируемых исследованиях. Для гомеопатии такого устойчивого эффекта не показано.</b></p>
+      <div class="table-wrap reveal">
+        <table>
+          <thead><tr><th>Обещание</th><th>Что говорит наука</th><th>Вердикт</th></tr></thead>
+          <tbody>
+            <tr><td>«Лечит простуду»</td><td>Простуда обычно проходит сама. Убедительных данных об эффекте сверх плацебо нет.</td><td><span class="badge">не доказано</span></td></tr>
+            <tr><td>«Укрепляет иммунитет»</td><td>«Укрепление иммунитета» — расплывчатое обещание. Для гомеопатии убедительного клинического эффекта такого рода не показано.</td><td><span class="badge">не подтверждено</span></td></tr>
+            <tr><td>«Безопасно, ведь натурально»</td><td>Некоторые продукты с маркировкой «гомеопатические» могут содержать значимые количества активных ингредиентов, вызывать побочные эффекты или взаимодействия. Отдельный риск — использовать их вместо эффективной помощи.</td><td><span class="badge badge--warn">может навредить</span></td></tr>
+            <tr><td>«Работает на детях и животных»</td><td>Улучшение после средства не доказывает, что оно произошло из-за средства. Болезнь могла пройти сама, могла применяться другая помощь, а оценка состояния зависит от наблюдателя.</td><td><span class="badge">после ≠ из-за</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="evidence-close reveal"><strong>«Мне помогло» — это опыт.<br>Не доказательство причины.</strong><p>Контролируемое исследование нужно именно затем, чтобы отделить действие средства от естественного течения болезни, ожиданий и другой помощи.</p></div>
+    </section>
+
+    <section class="section placebo">
+      <div class="placebo-card reveal"><p class="num">03 / ПОЧЕМУ КАЖЕТСЯ, ЧТО ПОМОГЛО</p><h2>Мозг любит<br>красивые совпадения</h2><div class="steps"><div><b>1</b><span>Стало плохо</span></div><i>→</i><div><b>2</b><span>Приняли гранулы</span></div><i>→</i><div><b>3</b><span>Стало лучше</span></div></div><p>Но «после» не всегда значит «из-за». Симптомы колеблются, многие болезни проходят самостоятельно, а внимание и ритуал действительно могут улучшить самочувствие — это не доказывает действие гранул.</p></div>
+    </section>
+
+    <section class="section risk" id="risk">
+      <div class="risk-copy reveal"><p class="num">04 / РЕАЛЬНЫЙ ВРЕД</p><h2>Опасна не крупинка сахара.<br><span>Опасна подмена.</span></h2></div>
+      <div class="risk-grid">
+        <article class="reveal"><b>01</b><h3>Время</h3><p><strong>Потерянное время.</strong> Пока человек ждёт эффекта, болезнь может прогрессировать, а диагностика и эффективное лечение — откладываться.</p></article>
+        <article class="reveal"><b>02</b><h3>Лечение</h3><p><strong>Замена лечения.</strong> Риск возникает, когда гомеопатией заменяют терапию или вакцинацию, эффективность которых доказана. Гомеопатические «иммунизации» не имеют доказанной эффективности.</p></article>
+        <article class="reveal"><b>03</b><h3>Уверенность</h3><p><strong>Ложное ощущение контроля.</strong> Симптомы могут ослабнуть сами или временно — и создать впечатление, что лечение работает, хотя причина болезни остаётся без диагностики.</p></article>
+        <article class="reveal"><b>04</b><h3>Деньги</h3><p><strong>Деньги на недоказанное.</strong> За обещание эффекта человек платит не только деньгами, но иногда и временем, которое могло быть потрачено на работающую помощь.</p></article>
+      </div>
+      <aside class="risk-note reveal"><b>И да: не каждый «гомеопатический» препарат — буквально сахар.</b><p>Некоторые продукты могут содержать измеримые количества активных веществ. Поэтому основной риск — подмена лечения, но не единственный.</p></aside>
+    </section>
+
+    <section class="section checker" id="check">
+      <div class="checker__title reveal"><p class="num">БЫСТРАЯ ПРОВЕРКА</p><h2>Перед покупкой<br>задайте 4 вопроса</h2><p class="checker-intro">Не верить или верить на слово — недостаточно. Нужно знать, что именно проверить.</p></div>
+      <div class="checklist reveal">
+        <label><input type="checkbox"><span class="checkmark"></span><span class="check-copy"><b>01 / Что здесь должно работать?</b><small>Есть ли действующее вещество и можно ли понять, сколько его содержится в препарате?</small><em>Проверено</em></span></label>
+        <label><input type="checkbox"><span class="checkmark"></span><span class="check-copy"><b>02 / Это проверяли?</b><small>Есть ли качественные независимые исследования эффективности именно для того, от чего вам предлагают это средство?</small><em>Проверено</em></span></label>
+        <label><input type="checkbox"><span class="checkmark"></span><span class="check-copy"><b>03 / Чем предлагают рискнуть?</b><small>Не предлагают ли заменить этим средством диагностику, назначенное лечение или вакцинацию?</small><em>Проверено</em></span></label>
+        <label><input type="checkbox"><span class="checkmark"></span><span class="check-copy"><b>04 / Что именно вам продают?</b><small>Лекарство, БАД или другой продукт — и что на самом деле обещает его официальная инструкция?</small><em>Проверено</em></span></label>
+        <p class="registration-note">Регистрация как лекарства ≠ доказательство эффективности.</p>
+        <div class="check-result"><strong data-check-count>0 / 4</strong><p data-check-result>Отметьте вопросы, ответы на которые удалось проверить.</p><small>Есть сомнения в эффективности или безопасности — обсудите их с врачом.</small></div>
+        <p class="check-final">Сначала факты. Потом покупка.</p>
+      </div>
+    </section>
+
+    <section class="sources" id="sources">
+      <div><p class="num">ИСТОЧНИКИ И ПОМОЩЬ</p><h2>Проверяйте нас тоже.</h2></div>
+      <div class="source-links"><a href="https://www.nccih.nih.gov/health/homeopathy" target="_blank" rel="noopener">NCCIH: Homeopathy <span>↗</span></a><a href="https://www.fda.gov/drugs/information-drug-class/homeopathic-products" target="_blank" rel="noopener">FDA: Homeopathic products <span>↗</span></a><a href="https://www.nhs.uk/conditions/homeopathy/" target="_blank" rel="noopener">NHS: Homeopathy <span>↗</span></a></div>
+      <p class="disclaimer">Материал носит информационный характер и не заменяет консультацию специалиста. Не отменяйте назначенное лечение самостоятельно. По вопросам диагностики и лечения обратитесь к врачу. При резком ухудшении состояния обращайтесь за неотложной помощью.</p>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span class="brand__dot"></span>не магия</a><p>Здоровью нужны доказательства, а не чудеса.</p><a href="#top">Наверх ↑</a></footer>
+  <a class="design-switch" href="index.html" aria-label="Открыть первый вариант дизайна"><span>01</span> Первый дизайн ←</a>
+</body>
+</html>
