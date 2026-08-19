@@ -32,7 +32,16 @@ dilution.addEventListener('input', () => {
 
 const checks = [...document.querySelectorAll('.checklist input')];
 const result = document.querySelector('[data-check-result]');
+const count = document.querySelector('[data-check-count]');
+const messages = [
+  'Отметьте вопросы, ответы на которые удалось проверить.',
+  'Проверено: 1 из 4. Пока слишком мало данных, чтобы принимать решение о покупке.',
+  'Проверено: 2 из 4. Половина вопросов всё ещё без ответа. Не спешите покупать.',
+  'Проверено: 3 из 4. Почти всё. Проверьте последний пункт — он тоже может изменить решение.',
+  'Все 4 пункта проверены. Теперь смотрите не на количество галочек, а на ответы.'
+];
 checks.forEach(check => check.addEventListener('change', () => {
-  const count = checks.filter(item => item.checked).length;
-  result.textContent = count === 4 ? 'Отлично: теперь обсудите ответы с врачом, которому доверяете.' : `Проверено: ${count} из 4. Не покупайте обещание — проверяйте доказательства.`;
+  const checked = checks.filter(item => item.checked).length;
+  count.textContent = `${checked} / 4`;
+  result.textContent = messages[checked];
 }));
